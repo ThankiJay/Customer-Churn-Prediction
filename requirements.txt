@@ -5,4 +5,9 @@ seaborn
 plotly
 scikit-learn
 ipykernel
+statsmodels
+tensorflow
+keras
+scikeras
+np_utils
 -e .
