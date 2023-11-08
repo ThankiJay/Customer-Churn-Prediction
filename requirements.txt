@@ -11,4 +11,5 @@ keras
 scikeras
 np_utils
 yellowbrick
+imbalanced-learn
 -e .
