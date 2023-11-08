@@ -10,4 +10,5 @@ tensorflow
 keras
 scikeras
 np_utils
+yellowbrick
 -e .
