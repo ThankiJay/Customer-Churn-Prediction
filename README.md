@@ -29,9 +29,10 @@ This initiative has the potential to benefit the telecom industry significantly:
 
 ## Data Source:
 This study's dataset was taken from Kaggle, a library of publicly available datasets for different data science and machine learning projects. The dataset was chosen for its relevance to the topic at hand, forecasting client attrition. Here are the data source's specifics:
-•     Source: Kaggle / IBM Sample Data Sets
-•     Dataset Name: Telco Customer Churn
-•     Description: This dataset contains customer information about their churn behavior and numerous factors such as subscribed services, customer account details, and demographic information.
-Rationale for Dataset Selection
+* **Source:** Kaggle / IBM Sample Data Sets
+* **Dataset Name:** Telco Customer Churn
+* **Description:** This dataset contains customer information about their churn behavior and numerous factors such as subscribed services, customer account details, and demographic information.
+
+#### Rationale for Dataset Selection
 The necessity for a comprehensive dataset that could be utilized to investigate client retention tactics drove the choice to use this dataset. Customers who departed within the last month are included in the dataset, as are the services they signed up for, account information, and demographic information. It has about 7000 rows and 21 columns, which provides a big enough sample size for significant data analysis and predictive modeling.
 In summary, the dataset utilized in this study was obtained from IBM Sample Data Sets and was selected due to its relevance to customer churn analysis. It satisfied the criterion of having sufficient records (over 2000 rows) and the relevant columns to satisfy the Phase 1 objectives.
