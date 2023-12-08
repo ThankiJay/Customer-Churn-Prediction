@@ -1,0 +1,6 @@
+gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,IntrntSrvc_DSL,IntrntSrvc_FiberOptic,IntrntSrvc_No,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract_Monthly,Contract_OneYear,Contract_TwoYear,PaperlessBilling,PayMthd_BankTransfer,PayMthd_CreditCard,PayMthd_ElectronicCheck,PayMthd_MailedCheck,MonthlyCharges,TotalCharges
+Female,No,Yes,No,1,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,29.84,29.84
+Male,No,No,No,34,Yes,No,Yes,No,No,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,56.94,1890
+Male,No,No,No,2,Yes,No,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,53.84,108.1
+Male,No,No,No,45,No,No,Yes,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,No,42.3,1841
+Female,No,No,No,2,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,70.7,151.6

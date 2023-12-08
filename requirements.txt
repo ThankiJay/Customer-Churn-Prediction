@@ -12,4 +12,5 @@ scikeras
 np_utils
 yellowbrick
 imbalanced-learn
+streamlit
 -e .
