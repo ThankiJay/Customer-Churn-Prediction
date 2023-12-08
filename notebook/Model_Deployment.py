@@ -86,6 +86,7 @@
 
 # Import libraries
 import streamlit as st
+import plotly.express as px
 import pandas as pd
 import joblib
 from PIL import Image
@@ -191,17 +192,33 @@ def main():
         uploaded_file = st.file_uploader("Choose a file")
         if uploaded_file is not None:
             data = pd.read_csv(uploaded_file)
-            #Get overview of data
+            # Get overview of data
             st.write(data.head())
             st.markdown("<h3></h3>", unsafe_allow_html=True)
-            #Preprocess inputs
+
+            # Preprocess inputs
             preprocess_df = preprocess(data, "Batch")
+
             if st.button('Predict'):
-                #Get batch prediction
+                # Get batch prediction
                 prediction = model.predict(preprocess_df)
                 prediction_df = pd.DataFrame(prediction, columns=["Predictions"])
-                prediction_df = prediction_df.replace({1:'Yes, the customer will terminate the service.',
-                                                    0:'No, the customer is happy with Telco Services.'})
+
+                # Replace numerical predictions with text
+                prediction_df['Predictions'] = prediction_df['Predictions'].replace({1: 'Yes', 0: 'No'})
+
+                # Count the number of each prediction for the pie chart
+                prediction_counts = prediction_df['Predictions'].value_counts()
+
+                # Define colors for the pie chart
+                colors = ['red','green']
+
+                # Create a pie chart
+                fig = px.pie(prediction_counts, values=prediction_counts.values, names=prediction_counts.index,
+                            title='Customer Churn Predictions', color_discrete_map=colors)
+
+                # Display the pie chart
+                st.plotly_chart(fig)
 
                 st.markdown("<h3></h3>", unsafe_allow_html=True)
                 st.subheader('Prediction')
