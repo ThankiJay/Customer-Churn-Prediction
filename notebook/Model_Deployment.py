@@ -15,8 +15,8 @@ def main():
 
     # Setting Application description
     st.markdown("""
-     :dart:  This Streamlit app is made to predict customer churn in a fictional telecommunication use case.
-    The application is functional for both online prediction and batch data prediction.
+     :dart:  This Streamlit software is designed to anticipate customer turnover in a telecom use case.
+    The program is capable of both realtime and batch data prediction.
     """)
     st.markdown("<h3></h3>", unsafe_allow_html=True)
 
